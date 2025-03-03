@@ -92,4 +92,5 @@ const gallery = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
   scrollZoom: false,
   fadeSpeed: 350,
+  animationSlide: true,
 });
