@@ -28,10 +28,10 @@ function onFormSubmit(evt) {
 
 function onTextareaInput(evt) {
   const name = evt.target.name;
-  const value = evt.target.value;
+  let value = evt.target.value;
 
   if (name in formData) {
-    formData[name] = value;
+    formData[name] = value.trim();
     localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
   }
 }
